@@ -103,3 +103,12 @@ print (server_list, server_list1)
 server_list = ["one", 2, 3, True, 4, 5, "six", 7, True, 8, "nine", 10, True, False, 13.1] 
 
 print(server_list.count(True))
+
+#copy is to creates a new object but inserts references into it.
+server_list1 = server_list.copy()
+
+server_list1.remove(4)
+
+print(server_list, server_list1) 
+# by comparing both we could see the value "4" is missing in the serverlist_1
+#['one', 2, 3, True, 4, 5, 'six', 7, True, 8, 'nine', 10, True, False, 13.1] ['one', 2, 3, True, 5, 'six', 7, True, 8, 'nine', 10, True, False, 13.1]
